@@ -1,0 +1,141 @@
+{
+    "Translation_API_Server": {
+        "current_translator": "LLM",
+        "Offline": {
+            "supported_languages_list": {
+                "English": "English",
+                "Japanese": "Japanese"
+            },
+            "HTTP_port_number": 14366,
+            "originalLanguage": "ja",
+            "translationLanguage": "en",
+            "initialPhrase": "おつかれさまでして",
+            "gpu": false,
+            "device": "cpu",
+            "intra_threads": 0,
+            "inter_threads": 4,
+            "beam_size": 5,
+            "repetition_penalty": 3,
+            "silent": false,
+            "disable_unk": true
+        },
+        "Google": {
+            "HTTP_port_number": 14367,
+            "supported_languages_list": {
+                "English": "en",
+                "Chinese": "zh-CN",
+                "Japanese": "ja",
+                "Korean": "ko",
+                "Spanish": "es",
+                "French": "fr",
+                "Portuguese": "pt",
+                "Vietnamese": "vi",
+                "Indonesian": "id",
+                "Arabic": "ar",
+                "Thai": "th",
+                "Turkish": "tr"
+            },
+            "input_language": "Japanese",
+            "output_language": "English"
+        },
+        "LLM": {
+            "HTTP_port_number": 14368,
+            "model_name": "openai/gpt-4o-mini",
+            "api_server": "optional for local services like ollama",
+            "api_key": "",
+            "supported_languages_list": {
+                "English": "English",
+                "Chinese": "Simplified Chinese",
+                "Japanese": "Japanese",
+                "Korean": "Korean",
+                "Spanish": "Spanish",
+                "French": "French",
+                "Portuguese": "Brazilian Portuguese",
+                "Vietnamese": "Vietnamese",
+                "Indonesian": "Indonesian",
+                "Arabic": "Arabic"
+            },
+            "input_language": "Japanese",
+            "output_language": "English"
+        },
+        "DeepL": {
+            "HTTP_port_number": 14369,
+            "hideBrowserWindowTrueOrFalse": true,
+            "DefaultNavigationTimeout": 30000,
+            "supported_languages_list": {
+                "English": "en-us",
+                "Chinese": "zh",
+                "Japanese": "ja",
+                "Korean": "ko",
+                "Spanish": "es",
+                "French": "fr",
+                "Portuguese": "pt-br",
+                "Indonesian": "id",
+                "Arabic": "ar",
+                "Turkish": "tr"
+            },
+            "input_language": "Japanese",
+            "output_language": "English",
+            "websiteURL": "https://www.deepl.com/en/translator#",
+            "languageSeparator": "/",
+            "inputTextSeparator": "/",
+            "inputTextboxID": "[data-testid=translator-source-input]",
+            "resultTextboxID": "[data-testid=translator-target-input]",
+            "initialPhrase": "DeepL"
+        }
+    },
+    "Sugoi_Japanese_Translator": {
+        "currentTranslator": "LLM",
+        "websocketServerPortNumber": 15367,
+        "HTTPserverPortNumber": 14467,
+        "Offline": {
+            "websocketServerPortNumber": 14466,
+            "HTTPserverPortNumber": 14467
+        },
+        "DeepL": {
+            "websocketServerPortNumber": 15366,
+            "HTTPserverPortNumber": 15467
+        },
+        "Google": {
+            "websocketServerPortNumber": 17466,
+            "HTTPserverPortNumber": 17467
+        },
+        "LLM": {
+            "websocketServerPortNumber": 18466,
+            "HTTPserverPortNumber": 18467
+        }
+    },
+    "Sugoi_Manga_OCR": {
+        "websocketServerPortNumber": 9676,
+        "HTTPserverPortNumber": 8676,
+        "pythonFlaskServerPortNumber": 7676,
+        "OCRserverPortNumber": 14267
+    },
+    "Light_Novel_OCR": {
+        "websocketServerPortNumber": 9676,
+        "HTTPserverPortNumber": 8676,
+        "pythonFlaskServerPortNumber": 7676,
+        "OCRserverPortNumber": 14267
+    },
+    "Visual_Novel_OCR": {
+        "websocketServerPortNumber": 9676,
+        "HTTPserverPortNumber": 8676,
+        "pythonFlaskServerPortNumber": 7676
+    },
+    "Manga_Rikai_OCR": {
+        "websocketServerPortNumber": 9575,
+        "HTTPserverPortNumber": 8575,
+        "pythonFlaskServerPortNumber": 7575
+    },
+    "Sugoi_Audio_Video_Translator": {
+        "HTTPserverPortNumber": 11000,
+        "transcription_server_port_number": 15366,
+        "device": "cpu",
+        "compute_type": "int8",
+        "vad_filter": true,
+        "beam_size": 5,
+        "language": "ja",
+        "only_transcribe": false,
+        "only_transcribe_and_translate": false
+    }
+}
